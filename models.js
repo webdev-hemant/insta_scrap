@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 require('dotenv').config();
 
-const db_url = process.env.POSTGRES_URL;
+const db_url = process.env.DB_URL;
 
 const sequelize = new Sequelize(db_url, {
     dialectOptions: {
